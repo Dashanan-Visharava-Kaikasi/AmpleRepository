@@ -1,0 +1,151 @@
+public class Appointment{
+	private String id;
+    private String department_id;
+    private String doctor_id;
+    private String appointment_date;
+    private String appointment_time;
+    private String patient_id;
+    String name,photo;//for Patient
+    private String note;
+    private String appointment_status;
+    private String done_by;
+    private String created_time;
+    private String dept_name;
+    private String dept_image;
+    private String doctor_name;
+    private String doctor_image;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class City
+{
+	String city;	
+}
+
+public class Department{
+	String id,name,dept_image;
+}
+
+public class Doctor{
+	private String id;
+    private String doctor_name,education_details;
+    private String period;
+    private String availbility_status;
+    private String email;
+    private String city;
+    private String address;
+    private String clinic_name;
+    private String doctor_image;
+    private String clinic_phone;
+    private String personal_phone;
+    private String about,distance;
+    private String gcm_token;
+    private String latitude;
+    private String longitude;
+    private List<DepartmentPojo> department = null;
+    private List<Duty_timing> duty_timing = null;
+    private List<Clinic_image> clinic_images = null;
+    private List<Rating> ratings = null;
+    private Double overall_rating;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class DoctorPojo{
+	String id,doctor_name,clinic_name,doctor_image,education_details,distance;
+    private List<DepartmentPojo> department = null;
+    private Double overall_rating;
+    private String latitude,longitude;
+}
+
+public class Duty_timing{
+	private String id;
+    private String doctor_id;
+    private String days;
+    private String duty_start_time;
+    private String duty_end_time;
+    private String break_time;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class Hospital{
+	private String id;
+    private String doctor_name;
+    private String department_id;
+    private String period;
+    private String availbility_status;
+    private String email;
+    private String password;
+    private String city;
+    private String address;
+    private String clinic_name;
+    private String doctor_image;
+    private String clinic_phone;
+    private String personal_phone;
+    private String about;
+    private String gcm_token;
+    private String latitude;
+    private String longitude;
+    private String distance;
+    private List<Clinic_image> clinic_images = null;
+    private List<Rating> ratings = null;
+    private Double overall_rating;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class Notification{
+	private String id;
+        private String department_id;
+        private String doctor_id;
+        private String appointment_date;
+        private String appointment_time;
+        private String patient_id;
+        private String note;
+        private String appointment_status;
+        private String created_time;
+        private String doctor_name;
+        private String doctor_image;
+        private String doc_gcm_token;
+        private String patient_name;
+        private String patient_photo;
+        private String patient_gcm_token;
+        private String patient_email;
+        private String message;
+        private String time;
+        private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class Prescription{
+	String id,appointment_id,patient_id,docotr_id,department_id,prescription,date_added,time_added;
+}
+
+public class Rating{
+	private String id;
+    private String doctor_id;
+    private String patient_id;
+    private String ratings;
+    private String review_text;
+    private String date_time;
+    private String report;
+    private String patient_name;
+    private String patient_photo;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}
+
+public class Success{
+	private String success;
+}
+
+public class TimingSlots{
+	public String success,timing;	
+}
+
+public class User{
+	private Integer id;
+    private String name;
+    private String email;
+    private String gender;
+    private String photo,city,mobile_no;
+    private String login_type;
+    private String availbility_status,doctor_image;//for doctor
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+}

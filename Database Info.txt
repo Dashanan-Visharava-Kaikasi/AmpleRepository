@@ -1,0 +1,30 @@
+
+create table [dbo].[User]
+(
+id int IDENTITY PRIMARY KEY NOT NULL,
+username nvarchar(100) NOT NULL,
+password nvarchar(100) NOT NULL,
+ParentId int NULL,
+LegId int NULL
+MemberrshipLevel int NOT NULL,
+)
+
+create table [dbo].[UniLevelPlan]
+(
+id int IDENTITY PRIMARY KEY NOT NULL,
+FK_UserId int foreign Key REFERENCES (User).id,
+Sponsor int 
+)
+
+
+
+create table [dbo].[MembershipLevel]
+(
+[Id] [int] IDENTITY(1,1) NOT NULL,
+[Title] [nvarchar(100)] NOT NULL,
+CONSTRAINT [PK_dbo.MembershipLevel] PRIMARY KEY CLUSTERED
+	(
+		[Id] ASC
+	) 
+)
+
